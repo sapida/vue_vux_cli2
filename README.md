@@ -1,16 +1,17 @@
 # 本项目是在vue-cli基础上根据公司自身的情况打造团队的脚手架，只需运行脚手架，就可以初始化整个项目。
 
-> 技术栈
-
-Vue.js : 前端页面展示
-Vuex : 全局状态通信
-axios：网络请求
-Vue-router：路由跳转,实现单页的核心
-Vux：移动端UI组件库
-fastclick：去除点击延时
-vue-scroller：刷新组件
-reset.css：初始化浏览器样式
-flexible.js：移动端rem布局
+### 项目技术架构
+***
+*   Vue.js : 前端页面展示
+*   Vuex : 全局状态通信
+*   axios：网络请求
+*   Vue-router：路由跳转,实现单页的核心
+*   Vux：移动端UI组件库
+*   fastclick：去除点击延时
+*   vue-scroller：刷新组件
+*   reset.css：初始化浏览器样式
+*   flexible.js：移动端rem布局
+***
 
 >  * 喜欢的请点心，关注，star ,fork,这些是我坚持下去的动力
 
