@@ -1,0 +1,133 @@
+/**
+ * 修改vux的样式
+ * aerfa 2017/11/24 11:51
+ */
+
+/**
+ * alert弹出框样式
+ */
+.weui-dialog{
+    max-width: 6.4rem;
+    border-radius: 16px;
+    .weui-dialog__hd {
+        padding: 1em 1.6em;
+        .weui-dialog__title{
+            font-size: 16px;
+        }
+    }
+    .weui-dialog__bd{
+        min-height: 0;
+        padding: 0 1.6em 1em;
+    }
+}
+
+/**
+ * toast弹出框样式
+ */
+.vux-toast{
+    .weui-toast {
+        display: flex;
+        align-items: center;
+        min-height: 0;
+        padding: 5px;
+        .weui-icon_toast{
+            margin: 0;
+            display: block !important;
+        }
+        .weui-icon_toast:before {
+            font-size: 28px;
+        }
+        .weui-toast__content{
+            margin: 0 !important;
+            margin-left: 5px !important;
+            padding: 0;
+        }
+    }
+}
+
+/**
+ * 加载框样式
+ */
+.vux-loading{
+    .weui-loading {
+        margin: 15px 0 0;
+    }
+}
+
+/**
+ *修改grid组件样式,去掉边框
+ */
+ .weui-grids:before {
+    height: 0px !important;
+    border-top: none !important;
+}
+.weui-grid:before {
+    width: 0px !important;
+    border-right: none !important;
+}
+.weui-grids:after {
+    width: 0px !important;
+    border-left: none !important;
+}
+.weui-grid:after {
+    height:0px !important;
+    border-bottom: none !important;
+}
+.weui-grid{
+    .weui-grid__label{
+        color: #999999;
+        font-size: 12px;
+    }
+}
+.weui-grid:active {
+    background:none !important;
+}
+/**
+ *修改cell样式，去掉上边距
+ */
+ .weui-cells {
+    background: none !important;
+    margin-top: 0px !important;
+    font-size: 15px !important;
+    color: #333333 !important;
+}
+.weui-cells:before {
+    height: 0px !important;
+    border-top:none !important;
+}
+.weui-cells:after {
+    height: 0px !important;
+    border-bottom:none !important;
+}
+.weui-cell:before {
+    height: 0px !important;
+    border-top:none !important;
+}
+
+//默认去掉右边箭头
+.weui-cell_access .weui-cell__ft:after{
+    height: 0 !important;
+    width: 0 !important;
+    border:0 !important;
+}
+
+/**
+ *修改header
+ */
+.vux-header .vux-header-title {
+    line-height: 1.067rem !important;
+    height: 1.067rem !important;
+}
+.vux-header .vux-header-left, .vux-header .vux-header-right {
+    top: .347rem !important;
+}
+
+/**
+ * 返回图标样式
+ */
+.arrow-left{
+    display: block;
+    fill:#fff;
+    padding-top: .4rem;
+    padding-left: .4rem;
+}
