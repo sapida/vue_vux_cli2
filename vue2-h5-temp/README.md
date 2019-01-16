@@ -15,9 +15,9 @@
 ***
 ### 参考资料
 
-[vue-cli 配置flexible](https://segmentfault.com/a/1190000011883121#articleHeader2)
-[使用Flexible实现手淘H5页面的终端适配](https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)
-[vue-打造webapp项目的脚手架](https://www.jianshu.com/p/00b2bd13b075)
+*[vue-cli 配置flexible](https://segmentfault.com/a/1190000011883121#articleHeader2)
+*[使用Flexible实现手淘H5页面的终端适配](https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)
+*[vue-打造webapp项目的脚手架](https://www.jianshu.com/p/00b2bd13b075)
 
 ### 移动端适配
 
