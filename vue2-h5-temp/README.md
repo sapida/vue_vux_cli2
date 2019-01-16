@@ -15,16 +15,16 @@
 ***
 ### 参考资料
 
-(vue-cli 配置flexible){https://segmentfault.com/a/1190000011883121#articleHeader2}
-(使用Flexible实现手淘H5页面的终端适配){https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html}
-(vue-打造webapp项目的脚手架)(https://www.jianshu.com/p/00b2bd13b075)
+[vue-cli 配置flexible](https://segmentfault.com/a/1190000011883121#articleHeader2)
+[使用Flexible实现手淘H5页面的终端适配](https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)
+[vue-打造webapp项目的脚手架](https://www.jianshu.com/p/00b2bd13b075)
 
 ### 移动端适配
 
 *    根据不同屏幕动态写入font-size，以rem作为宽度单位，固定布局视口。
 
 首先设置理想视口:
-<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+`<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">`
 接下来计算 html 元素的 font-size,将可视视口的宽度乘以一个系数:
 
 >  * 喜欢的请点心，关注，star ,fork,这些是我坚持下去的动力
