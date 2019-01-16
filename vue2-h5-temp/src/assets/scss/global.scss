@@ -1,0 +1,14 @@
+.container-view{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 100;
+}
+.lg-scroller{
+    height: auto !important;
+    bottom:0 !important;
+    top: 46px !important;
+}

@@ -1,0 +1,16 @@
+/**
+ * https://guide.aotu.io/docs/css/reset.html
+ */
+html,body,div,p,ul,li,dl,dt,dd,em,i,span,a,img,input,h1,h2,h3,h4,h5 {margin:0;padding:0;box-sizing: border-box;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+button,input,select,textarea{font-size:100%;outline:none}
+img { border: 0 none; vertical-align: top; pointer-events: none; }
+i, em, b{ font-style: normal; }
+ol, ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+a { text-decoration: none; color: #666; }
+a:hover, a:active {outline: none;}
+input[type="text"], textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+html, body {-webkit-user-select: none;user-select: none;-webkit-touch-callout: none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);overflow-y:auto;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body {font-family: -apple-system,Helvetica,sans-serif; line-height: 1; color: #666; -webkit-overflow-scrolling: touch;overflow-scrolling: touch}
+
