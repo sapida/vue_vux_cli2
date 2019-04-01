@@ -1,71 +1,50 @@
 <template>
-  <transition 
-    :enter-active-class="type == 'bottom' ? 'enter-bottom-active' : 'enter-left-active'" 
-    :leave-active-class="type == 'bottom' ? 'leave-bottom-active' : 'leave-left-active'"
-  >
-    <keep-alive>
-      <router-view class="container-view"/>
-    </keep-alive>
+  <transition :name="viewTransition">
+    <router-view class="container-view"/>
   </transition>
 </template>
+
 <script>
+import { mapState} from 'vuex'
 export default {
-  props: ['type']
+  computed: {
+    ...mapState([
+      'direction',
+    ]),
+    viewTransition () {
+      if(this.direction == 'tip'){
+        return 'fold'
+      }else{
+        return 'swiper';
+      }
+    },
+  },
 }
 </script>
 
-
 <style lang='scss' scoped>
-.enter-left-active{
-  animation:enterLeftActive 0.3s;
+.fold-enter-active {
+  animation:fold-in 0.3s;
+  opacity: 1;
 }
-.leave-left-active{
-  animation:leaveLeftActive 0.3s;
+.fold-leave-active {
+  animation:fold-out 0.3s;
+  opacity: 1;
 }
-.enter-bottom-active{
-  animation:enterBottomActive 0.3s;
-}
-.leave-bottom-active{
-  animation:leaveBottomActive 0.3s;
-}
-@keyframes enterLeftActive {
+@keyframes fold-in {
   0% {
     transform: translateX(100%);
-    opacity: 1;
   }
   100% {
     transform: translateX(0px);
-    opacity: 1;
   }
 }
-@keyframes leaveLeftActive {
+@keyframes fold-out {
   0% {
     transform: translateX(0px);
-    opacity: 1;
   }
   100% {
     transform: translateX(100%);
-    opacity: 1;
-  }
-}
-@keyframes enterBottomActive {
-  0% {
-    transform: translateY(100%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-@keyframes leaveBottomActive {
-  0% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100%);
-    opacity: 1;
   }
 }
 </style>

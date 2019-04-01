@@ -4,7 +4,7 @@
         <group>
             <cell title="title" value="value" link="/person"></cell>
         </group>
-        <lg-transition type="bottom"></lg-transition>
+        <lg-transition></lg-transition>
     </div>
 </template>
 

@@ -11,7 +11,7 @@ const store = new Vuex.Store({
     plugins:[vuexLocal.plugin],
     //定义状态
     state:{
-        author:''
+        direction: 'tip',  //tip或者swiper(点击返回还是滑动返回)
     },
     //计算属性
     getters:{
@@ -19,9 +19,9 @@ const store = new Vuex.Store({
     },
     //修改状态事件，必须同步函数
     mutations:{
-        newAuthor (state, msg) {
-            state.author = msg;
-        }
+        updateDirection (state, payload) {
+            state.direction = payload;
+        },
     },
     //提交 mutation，可以异步操作
     actions:{
