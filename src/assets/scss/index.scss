@@ -1,0 +1,41 @@
+@import './reset.scss';
+
+html, 
+body,
+#app{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+html, body {
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+body{
+    font-family:"Helvetica Neue",Helvetica, Arial,sans-serif; 
+    font-size: 14px !important;
+    line-height:1;
+    -webkit-overflow-scrolling:touch;
+    overflow-x: hidden;
+    max-width: 1080Px;
+    background: #f6f6f6;
+    margin: 0 auto;
+}
+.container-view{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 100;
+}
+.scroller{
+    height: auto !important;
+    top: 46px !important;
+    bottom:0px !important;
+}
+
